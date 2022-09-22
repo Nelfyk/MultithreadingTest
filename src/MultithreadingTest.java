@@ -3,11 +3,11 @@ import java.util.concurrent.Semaphore;
 public class MultithreadingTest {
     public static void main(String[] args) {
         Semaphore sem = new Semaphore(2);
-        new Philosopher(sem, "Руся").start();
-        new Philosopher(sem, "Андрей").start();
-        new Philosopher(sem, "Данила").start();
-        new Philosopher(sem, "Примат").start();
-        new Philosopher(sem, "Юра").start();
+        new Philosopher(sem, "A").start();
+        new Philosopher(sem, "B").start();
+        new Philosopher(sem, "C").start();
+        new Philosopher(sem, "D").start();
+        new Philosopher(sem, "E").start();
 
     }
 }
